@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="soccer, European, league game, match" /> 
+<meta name="keywords" content="soccer, league" />
+	<title>European soccer league</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<div class="change">
+<button type="button" onclick="changeCSS('css/style.css');"> style1   </button>
+<button type="button" onclick="changeCSS('css/style2.css');"> style2   </button>
+</div>
+
+	<div class="border">
+		<div class="page">
+			<div class="sidebar">
+				<a href="index.html" id="logo"><img src="images/logo_1.png" alt="logo" width="230" height="219"></a>
+			<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>					
+					<li>
+						<a href="Serie A.html">Serie A</a>
+					</li>
+					<li>
+						<a href="Premier League.html">Premier League</a>
+					</li>
+					<li>
+						<a href="Liga BBVA.html">Liga BBVA</a>
+					</li>
+					<li>
+						<a href="Bundesliga.html">Bundesliga</a>
+					</li>
+                    <li>
+					  <a href="Ligue 1.html">Ligue 1</a>
+					</li>
+                    <li class="selected">
+						<a href="contact.html">Contact us</a>
+					</li>
+				</ul>
+				<form action="index.html">
+					<span> Signup</span>
+					<input type="text" onClick="this.value='';" onFocus="this.select()" onBlur="this.value=!this.value?'Enter Valid Email Address':this.value;" value="Enter Valid Email Address">
+					<input type="submit" id="submit" value="submit">
+				</form>
+				<p>
+					Copyright 2023
+				</p>
+				<p>
+					soccer league
+				</p>
+			</div>
+			<div class="body">
+				<div class="contact">
+					<h2>Contact</h2>
+					<p>&nbsp;</p>
+					<form id="contacts-form" action="contact.html" onsubmit="return validate_form(this)" method="get">
+                          <fieldset>
+						<div class="field"><label>First Name</label>
+						<input type="text" name="Firstname" value=""/></div>
+						<div class="field"><label>Last Name</label>
+						<input type="text"  name="Lastname" value=""/></div>
+						<div class="field"><label>Email Address</label>
+						<input type="text" name="email" value=""/></div>
+						<div class="field"><label>Phone:</label>
+						<input type="text" name="phone" value=""/></div>
+						<div class="field"><label>Message</label>
+						<textarea name="message" cols="" rows=""></textarea></div>
+						<div class="alignright">
+                                    <input type="submit" value="Send Message" /></div>
+                      </fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
